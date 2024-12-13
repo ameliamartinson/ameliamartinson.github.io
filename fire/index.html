@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>amelia's site</title>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <h1 id="datetime"> </h1>
+    </body>
+  <script>
+    var now = Date.now();
+    var then = Date.parse("2018-02-05T12:00:00");
+    var days = Math.floor((now - then)/86400000);
+
+    document.getElementById("datetime").innerHTML = days + "🔥";
+  </script>
+</html>
